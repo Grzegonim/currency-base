@@ -20,7 +20,7 @@ describe('ConvertPLNtoUSD', () => {
     expect(convertPLNToUSD(()=>{})).toBe('Error');
   });
   it('should return NaN when input is < 0', () => {
-    expect(convertPLNToUSD(-100)).toBeNaN();
-    expect(convertPLNToUSD(-53)).toBeNaN();
+    expect(convertPLNToUSD(-100)).toBe('Wrong value');
+    expect(convertPLNToUSD(-53)).toBe('Wrong value');
   });
 });
